@@ -80,7 +80,7 @@ int main(){
         	}
             	cout << "Would " << p2.name << " like to strike or build bombs?\n";
             	cout << "Bombs: " << p2.bombs << "\n";
-            	getline(cin, action2);
+            	cin >> action2;
                 	if(action2=="strike"){
                     	strike2();
                 	}
