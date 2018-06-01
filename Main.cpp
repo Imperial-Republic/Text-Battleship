@@ -29,6 +29,9 @@ void strike1(){
         	cout << "Hit!\n";
         	p2.ships=p2.ships - 1;
     	}
+	else{
+		cout << "Miss";
+	}
     p1.bombs=p1.bombs - 1;
 }
 
@@ -42,6 +45,9 @@ void strike2(){
         	cout << "Hit!\n";
         	p1.ships=p1.ships - 1;
     	}
+	else{
+		cout << "Miss";
+	}
     p2.bombs=p2.bombs - 1;
 }
 
@@ -71,7 +77,7 @@ int main(){
 	while(true){
     	cout << "Would " << p1.name << " like to strike or build bombs?\n";
     	cout << "Bombs: " << p1.bombs << "\n";
-    	getline(cin, action1);
+    	cin >> action1;
         	if(action1=="strike"){
             	strike1();
         	}
@@ -80,7 +86,7 @@ int main(){
         	}
             	cout << "Would " << p2.name << " like to strike or build bombs?\n";
             	cout << "Bombs: " << p2.bombs << "\n";
-            	getline(cin, action2);
+            	cin >> action2;
                 	if(action2=="strike"){
                     	strike2();
                 	}
