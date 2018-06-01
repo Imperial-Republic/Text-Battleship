@@ -71,7 +71,7 @@ int main(){
 	while(true){
     	cout << "Would " << p1.name << " like to strike or build bombs?\n";
     	cout << "Bombs: " << p1.bombs << "\n";
-    	getline(cin, action1);
+    	cin >> action1;
         	if(action1=="strike"){
             	strike1();
         	}
